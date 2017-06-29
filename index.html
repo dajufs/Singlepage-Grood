@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+
+    <meta charset="UTF-8">
+    <title>Application de repas à domicile - Commandes et Livraisons - Grood </title>
+    <meta name="description" content="GROOD est une application qui vous permet de commander en ligne, seul, ou à plusieurs, dans un restaurant tout en bénéficiant de réductions." />
+    <meta name="Resource-type" content="Document" />
+    <meta name="google-site-verification" content="MAKxu8aLLEJngEnyYoSfGRf4GhFPzPM_pAV5M4fzj0M" />
+    <meta name="viewport" content="width=device-width">
+    <link rel="icon" type="image/png" sizes="16x16" href="./img/favicon.png">
+    <link rel="stylesheet" type="text/css" href="./css/jquery.fullPage.css" />
+    <link rel="stylesheet" type="text/css" href="./css/reset.css" />
+    <link rel="stylesheet" type="text/css" href="./css/style.css" />
+    <link rel="stylesheet" type="text/css" href="./css/form.css" />
+    <!--[if IE]>
+		<script type="text/javascript">
+			var console = { log: function() {} };
+		</script>
+		<![endif]-->
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.9.1/jquery-ui.min.js"></script>
+    <script type="text/javascript" src="./js/jquery.fullPage.js"></script>
+    <script type="text/javascript" src="./js/jquery.youtubebackground.js"></script>
+</head>
+
+<body>
+    <div class="row vtable">
+        <header class="header">
+            <a id="link-logo" href="#accueil"></a>
+            <nav class="header-nav">
+                <ul>
+                    <li><a href="#le-grood-cest" title="Le Grood">Le Grood</a></li>
+                    <li><a href="#comment-ca-marche" title="Comment ça marche">Comment ça marche</a></li>
+                    <li><a href="#rejoignez-nous" title="Rejoignez-nous">Rejoignez-nous</a></li>
+                    <li><a href="#contact-nous" title="Contactez-nous">Contactez-nous</a></li>
+                </ul>
+            </nav>
+        </header>
+    </div>
+    <div id="fullpage">
+        <div class="section" id="presentaion-grood">
+            <div id="opacity-home"></div>
+            <div id="background-image">
+
+            </div>
+            <div id="background-video" class="background-video">
+
+            </div>
+
+            <!--   <div class='embed-container'><iframe src="https://www.youtube.com/embed/k0i12s_eYvg?autoplay=1&loop=1&cc_load_policy=1rel=0&amp;controls=0&amp;showinfo=0&playlist=k0i12s_eYvg" frameborder="0" allowfullscreen></iframe></div>-->
+            <div id="layer">
+                <div id="logo-pajesjaunes">
+                    <a href="#accueil"><img src="./img/logo-pagesjaunes-grood.png" alt="Logo PagesJaunes"></a>
+                </div>
+                <p>Presente</p>
+                <div id="logo-grood">
+                    <a href="#accueil"><img src="./img/logo-grood-homepage.png" alt="Logo Grood by PagesJaunes"></a>
+                </div>
+                <h1>Commandez en groupe. Payez moins cher.</h1>
+                <div class="telecharger-apps">
+                    <a href="https://itunes.apple.com/fr/app/pagesjaunes-resto-livraison/id1005630463?mt=8" target="_blank"><img src="img/apple-store.svg" alt="Télecharger l'application Grood sur Apple Store"></a>
+                    <a href="https://play.google.com/store/apps/details?id=fr.pagesjaunesresto.grood" target="_blank">
+                        <img src="img/google-play.svg" width="200" alt="Télecharger l'application Grood sur Google Play"></a>
+                </div>
+            </div>
+
+            <span class="scroll-btn">
+	<a href="#le-grood-cest">
+		<span class="mouse">
+			<span>
+			</span>
+            </span>
+            </a>
+            </span>
+        </div>
+        <div class="section fp-auto-height-responsive" id="commande-groupe">
+            <div class="row vtable">
+                <h2>Le Grood est une application qui va changer votre façon de commander à manger.</h2>
+                <div class="block-avantages">
+                    <ul>
+                        <li>+ de 1300 restaurants référencés dans 40 spécialités.</li>
+                        <li>Joignez-vous à d’autres personnes qui commandent autour de vous. Commandez pour vous même. Payez séparément, avec le moyen de paiement de votre choix.</li>
+                        <li>La commande est groupée. Un grand nombre de nos restaurants vous proposent des réductions allant jusqu’à - 50% lorsque vous êtes nombreux sur la même commande.</li>
+                    </ul>
+                </div>
+                <div class="iphone_right"></div>
+            </div>
+        </div>
+        <div class="section fp-auto-height-responsive" id="comment-ca-marche-le-grood">
+            <div class="row vtable">
+                <div id="slideshow-container">
+                    <div class="iphone_left"></div>
+                    <div id="div-tuto">
+                        <h2 id="title-h2-tuto">Comment ça marche ?</h2>
+                        <p id="p-h2-tuto">Le Grood vous permet de commander dans vos restaurants préférés<strong> seul</strong>, ou en <strong>groupe.</strong></p>
+                    </div>
+                    <div id="icons-tuto">
+                        <div class="dot choisissez" onclick="currentSlide(1)"></div>
+                        <div class="dot prive-public" onclick="currentSlide(2)"></div>
+                        <div class="dot invitez-vos-amis" onclick="currentSlide(3)"></div>
+                        <div class="dot la-livraison " onclick="currentSlide(4)"></div>
+                    </div>
+                    <div class="slide-iphone fade">
+
+                        <div class="iphone-fixe">
+                            <img src="./img/choisissez-votre-restaurant.jpg" alt="Commandez seul ou participer à une commande groupée proche de chez vous">
+                        </div>
+                        <div class="div-slide">
+                            <h3>Choisissez</h3>
+                            <br>
+                            <p>Deux possibilités s’offrent à vous : soit vous êtes l’initiateur d’un Grood et vous choisissez votre localité et votre restaurant, soit vous rejoignez un Grood proche de chez vous.</p>
+                        </div>
+                    </div>
+                    <div class="slide-iphone fade">
+                        <div class="iphone-fixe">
+                            <img src="./img/grood-prive-public.jpg" alt="Heure de livraison, adresse de livraison, timer du grood, choix du statut du Grood">
+                        </div>
+                        <div class="div-slide">
+                            <h3>Privé / Public</h3>
+                            <br>
+                            <p>A vous de choisir le statut de votre Grood :
+                                <br>Privé : communiquez à vos amis un code pour qu’ils rejoignent le même Grood que vous.
+                                <br> Public : tout le monde peut rejoindre votre Grood.</p>
+                        </div>
+                    </div>
+                    <div class="slide-iphone fade">
+                        <div class="iphone-fixe">
+                            <img src="./img/invitez-vos-amis.jpg" alt="Envoyez un email ou un sms pour inviter vos amis à commander avec vous dans un même restaurant">
+                        </div>
+                        <div class="div-slide">
+                            <h3>Invitez vos amis</h3>
+                            <br>
+                            <p>Plus vous serez nombreux à participer au Grood, plus votre réduction sera grande. Pour cela rien de plus simple, l’appli vous permet d’envoyer des invitations à vos contacts.</p>
+                        </div>
+                    </div>
+                    <div class="slide-iphone fade">
+                        <div class="iphone-fixe">
+                            <img src="./img/la-livraison-grood.jpg" alt="Informations livraison, votre commande est arrivée, vous bénéficiez de réductions">
+                        </div>
+                        <div class="div-slide">
+                            <h3>La livraison</h3>
+                            <br>
+                            <p>Lorsque tous les paniers sont confirmés et que le timer s’arrête, votre commande sera transmise au restaurant. La livraison se fera ensuite à l’adresse renseignée, dans des sacs individuels.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="section fp-auto-height-responsive" id="restaurants-partenaires">
+            <div id="myModal" class="modal">
+
+                <!-- Modal content -->
+                <div class="modal-content">
+                    <span class="close">x</span>
+                    <form action="https://www.salesforce.com/servlet/servlet.WebToLead?encoding=UTF-8" method="POST" onsubmit="return(validate());">
+
+                        <input type="hidden" name="oid" value="00D24000000bMW9">
+                        <input type="hidden" name="retURL" value="http://www.grood.co/merci.html">
+
+                        <!--  ----------------------------------------------------------------------  -->
+                        <!--  REMARQUE : Ces champs sont des éléments de débogage facultatifs.        -->
+                        <!--  N'insérez aucun commentaire sur ces lignes si vous voulez tester en     -->
+                        <!--  mode débogage.                                                          -->
+                        <!--  <input type="hidden" name="debug" value=1>                              -->
+                        <!--  <input type="hidden" name="debugEmail"                                  -->
+                        <!--  value="mikael@pagesjaunesresto.fr">                                     -->
+                        <!--  ----------------------------------------------------------------------  -->
+                        <h4>Devenez Partenaire</h4>
+
+                        <input id="company" placeholder="Société" maxlength="40" name="company" size="20" type="text" required/>
+                        <br>
+
+                        <li>
+                            <input class="form-left" id="first_name" placeholder="Prénom" maxlength="40" name="first_name" size="15" type="text" required/>
+
+
+
+                            <input class="form-right" id="last_name" placeholder="Nom" maxlength="80" name="last_name" size="15" type="text" required/>
+
+                        </li>
+
+                        <input class="form-left" id="phone" placeholder="Téléphone" maxlength="40" name="phone" size="20" type="text" required/>
+
+
+
+                        <input class="form-right" id="mobile" placeholder="Mobile" maxlength="40" name="mobile" size="20" type="text" required/>
+
+
+
+                        <input placeholder="Adresse e-mail" id="email" maxlength="80" name="email" size="20" type="text" required/>
+
+
+                        <textarea placeholder="Rue" name="street" required></textarea>
+
+
+                        <input id="city" placeholder="Ville" maxlength="40" name="city" size="20" type="text" required/>
+
+                        <input id="zip" placeholder="Code Postal" maxlength="20" name="zip" size="20" type="text">
+
+                        <input type="submit" name="submit" value="Envoyer ma demande">
+
+                    </form>
+                </div>
+                <div id="confirm-modal" class="modal">
+                    <h2>CONFIRM</h2>
+                </div>
+            </div>
+
+            <div class="row vtable">
+                <div class="bandeau">
+                    <h2>De plus grosses commandes avec un seul livreur ?</h2>
+                    <p>Rejoignez-nous et rendez profitable votre activité de livraison.</p>
+                    <div class="padding">
+                        <button type="button" id="myBtn">Rejoignez-nous</button>
+                    </div>
+                    <!-- The Modal -->
+                </div>
+
+                <div class="logos_restaurants">
+                    <h4>Ils sont déjà sur le Grood</h4>
+                    <ul class="logos">
+                        <li id="libshop">
+                            <img src="./img/partenariat/libshop-grood.jpg" alt="Restaurant Libshop Spécialité: Libanais">
+                        </li>
+                        <li>
+                            <img src="./img/partenariat/arito-sushi-grood.jpg" alt="Restaurant Arito Sushi Spécialité: Japonais">
+                        </li>
+                        <li>
+                            <img src="./img/partenariat/bagel-days-grood.jpg" alt="Restaurant Bagel Days Spécialité: Sandwich">
+                        </li>
+                        <li>
+                            <img src="./img/partenariat/thai-at-home-grood.jpg" alt="Restaurant Thai at home Spécialité: Thailandais  ">
+                        </li>
+                        <li>
+                            <img src="./img/partenariat/francesca-grood.jpg" alt="Restaurant Francesca Spécialité: Italien">
+                        </li>
+                        <li>
+                            <img src="./img/partenariat/langousta-grood.jpg" alt="Restaurant Langousta Spécialité: Fruit de mer">
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="section" id="telecharger-grood">
+            <div class="row vtable">
+                <div id="logo-grood-app">
+                    <a href=""></a>
+                    <img src="./img/logo-application-mobile.png" alt="Grood by PagesJaunes">
+                </div>
+                <div id="mobile-apps" class="telecharger-apps">
+                    <a href="https://itunes.apple.com/fr/app/pagesjaunes-resto-livraison/id1005630463?mt=8" target="_blank"><img src="img/apple-store.svg" width="200" alt="Télecharger l'application Grood sur Apple Store"></a>
+                    <a href="https://play.google.com/store/apps/details?id=fr.pagesjaunesresto.grood" target="_blank">
+                        <img src="img/google-play.svg" width="200" alt="Télecharger l'application Grood sur Google Play"></a>
+                </div>
+                <div class="footer">
+                    <div class="icons-reseaux">
+                        <a href="https://www.facebook.com/GROODapp/" target="_blank">
+                            <img class="icons-social" src="./img/icon-facebook.svg" alt="Facebook Grood by PagesJaunes"></a>
+                        <a href="https://twitter.com/GROOD_app" target="_blank"><img class="icons-social" src="./img/icon-twitter.svg" alt="Twitter Grood by PagesJaunes"></a>
+                    </div>
+
+                    <p>01 77 45 81 68</p>
+                    <a href="mailto:contact@grood.co">
+                        <p>contact@grood.co</p>
+                    </a>
+                    <a href="http://www.pagesjaunesresto.fr/conditions-generales-de-ventes" target="_blank">
+                        <p>Conditions générales de vente</p>
+                    </a>
+                    <p>© Grood by PagesJaunes - 2017</p>
+                </div>
+            </div>
+        </div>
+        <script type="text/javascript" src="./js/script.js"></script>
+
+        <script>
+            (function (i, s, o, g, r, a, m) {
+                i['GoogleAnalyticsObject'] = r;
+                i[r] = i[r] || function () {
+                    (i[r].q = i[r].q || []).push(arguments)
+                }, i[r].l = 1 * new Date();
+                a = s.createElement(o),
+                    m = s.getElementsByTagName(o)[0];
+                a.async = 1;
+                a.src = g;
+                m.parentNode.insertBefore(a, m)
+            })(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
+
+            ga('create', 'UA-84314700-1', 'auto');
+            ga('send', 'pageview');
+        </script>
+        <!-- Code Google de la balise de remarketing -->
+        <!--------------------------------------------------
+Les balises de remarketing ne peuvent pas être associées aux informations personnelles ou placées sur des pages liées aux catégories à caractère sensible. Pour comprendre et savoir comment configurer la balise, rendez-vous sur la page http://google.com/ads/remarketingsetup.
+--------------------------------------------------->
+        <script type="text/javascript">
+            /* <![CDATA[ */
+            var google_conversion_id = 1001693738;
+            var google_custom_params = window.google_tag_params;
+            var google_remarketing_only = true;
+            /* ]]> */
+        </script>
+        <script type="text/javascript" src="//www.googleadservices.com/pagead/conversion.js">
+        </script>
+        <noscript>
+            <div style="display:inline;">
+                <img height="1" width="1" style="border-style:none;" alt="" src="//googleads.g.doubleclick.net/pagead/viewthroughconversion/1001693738/?guid=ON&amp;script=0" />
+            </div>
+        </noscript>
+        <!-- Facebook Pixel Code -->
+        <script>
+            ! function (f, b, e, v, n, t, s) {
+                if (f.fbq) return;
+                n = f.fbq = function () {
+                    n.callMethod ?
+                        n.callMethod.apply(n, arguments) : n.queue.push(arguments)
+                };
+                if (!f._fbq) f._fbq = n;
+                n.push = n;
+                n.loaded = !0;
+                n.version = '2.0';
+                n.queue = [];
+                t = b.createElement(e);
+                t.async = !0;
+                t.src = v;
+                s = b.getElementsByTagName(e)[0];
+                s.parentNode.insertBefore(t, s)
+            }(window,
+                document, 'script', 'https://connect.facebook.net/en_US/fbevents.js');
+            fbq('init', '761468027260177'); // Insert your pixel ID here.
+            fbq('track', 'PageView');
+        </script>
+        <noscript><img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id=761468027260177&ev=PageView&noscript=1" /></noscript>
+        <!-- DO NOT MODIFY -->
+        <!-- End Facebook Pixel Code -->
+    </div>
+</body>
+
+</html>

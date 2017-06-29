@@ -1,0 +1,7 @@
+User-agent: *
+Disallow: /*.jpg$
+Disallow: /*.png$
+Disallow: /*.gif$
+Disallow: /images/
+Allow: htpp://grood.co/index.html
+Disallow: /merci.html

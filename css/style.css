@@ -1,0 +1,1680 @@
+/* Style base */
+
+@font-face {
+    font-family: 'Brandon-Light';
+    src: url('../font/brandon/thin/Brandon_light.eot');
+    src: url('../font/brandon/thin/Brandon_light.eot') format('embedded-opentype'), url('../font/brandon/thin/Brandon_light.woff') format('woff'), url('../font/brandon/thin/Brandon_light.ttf') format('truetype'), url('../font/brandon/thin/Brandon_light.otf') format('truetype'), url('../font/brandon/thin/Brandon_light.svg') format('svg')
+}
+
+@font-face {
+    font-family: 'Brandon-Medium';
+    src: url('../font/brandon/medium/Brandon_reg.eot');
+    src: url('../font/brandon/medium/Brandon_reg.eot') format('embedded-opentype'), url('../font/brandon/medium/Brandon_reg.woff') format('woff'), url('../font/brandon/medium/Brandon_reg.ttf') format('truetype'), url('../font/brandon/medium/Brandon_reg.otf') format('truetype'), url('../font/brandon/medium/Brandon_reg.svg') format('svg')
+}
+
+@font-face {
+    font-family: 'Brandon-Bold';
+    src: url('../font/brandon/bold/Brandon_bld.eot');
+    src: url('../font/brandon/bold/Brandon_bld.eot') format('embedded-opentype'), url('../font/brandon/bold/Brandon_bld.woff') format('woff'), url('../font/brandon/bold/Brandon_bld.ttf') format('truetype'), url('../font/brandon/bold/Brandon_bld.otf') format('truetype'), url('../font/brandon/bold/Brandon_bld.svg') format('svg')
+}
+
+body {
+    font-family: 'Brandon-Light', sans-serif !important;
+    font-size: 14px;
+    line-height: 1.5em;
+    color: #777;
+}
+
+h1 {
+    font-size: 4em;
+    line-height: 1em;
+    font-family: 'Brandon-Bold', sans-serif;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    padding: 25px;
+}
+
+h2 {
+    font-size: 3em;
+    line-height: 1em;
+    font-family: 'Brandon-Bold', sans-serif;
+    text-transform: uppercase;
+    color: #2ecc71;
+}
+
+h3 {
+    font-size: 2.5em;
+    line-height: 1em;
+    font-family: 'Brandon-Bold', sans-serif;
+    text-transform: uppercase;
+    color: #2ecc71;
+}
+
+h4 {
+    font-size: 2em;
+    line-height: 1em;
+    font-family: 'Brandon-Bold', sans-serif;
+    text-transform: uppercase;
+    color: #777;
+        padding: 0 0 30px;
+}
+
+p {
+    font-size: 1.3em;
+}
+
+.section {
+    text-align: center;
+}
+
+
+/* FIN Style base */
+
+
+/*----------------------------------------------*/
+
+
+/* DEBUT MENU*/
+
+.header,
+.header-hover {
+    position: fixed;
+    left: 0;
+    height: 80px;
+    width: 100%;
+    z-index: 1;
+    text-align: center;
+    padding: 20px 0 0 0;
+}
+
+.header {
+    color: #FFF;
+    padding: 20px 0 0 0;
+    transition: background-color .3s;
+}
+
+.header-hover {
+    background-color: #fff;
+    color: #777;
+    transition: background-color .3s;
+    background-image: url(../img/logo-grood-header.svg);
+    background-repeat: no-repeat;
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.1);
+    background-position: 5%;
+    background-size: 310px;
+}
+
+#link-logo {
+    padding: 33px 279px 13px 5px;
+    height: 6px;
+    cursor: pointer;
+    top: 17px;
+    position: absolute;
+    left: 4%;
+}
+
+
+/* FIN MENU*/
+
+
+/*------------------------------------------------*/
+
+
+/*NAVIGATION*/
+
+.header-nav {
+    float: right;
+    position: relative;
+    right: 1%;
+}
+
+.header-nav ul,
+.header-nav li {
+    display: inline;
+    list-style: none;
+    right: 9%;
+    float: none;
+}
+
+.header-nav a {
+    position: relative;
+    display: inline-block;
+    padding: 10px 20px;
+    letter-spacing: 0.035em;
+    color: inherit;
+    text-transform: uppercase;
+}
+
+.header-nav a:after {
+    content: "";
+    position: absolute;
+    bottom: 0px;
+    right: 20px;
+    left: 20px;
+    height: 2px;
+    background-color: #FFF;
+    opacity: 0;
+    transform: translateY(5px);
+    transition: all .4s;
+}
+
+.header-nav a:hover:after,
+.header-nav a:focus:after {
+    opacity: 0.6;
+    -webkit-opacity: 0.6;
+    -moz-opacity: 0.6;
+    filter: alpha(opacity=60);
+    transform: translateY(0);
+}
+
+.header-nav a:focus {
+    outline: none;
+}
+
+
+/* FIN NAVIGATION*/
+
+
+/*------------------------------------------------*/
+
+
+/*ALL SECTIONS*/
+
+.row {
+    width: 90%;
+    max-width: 1170px;
+    margin: 0 auto;
+}
+
+.vtable {
+    display: table;
+}
+
+.vtable .iphone,
+.vtable .text {
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.section {
+    text-align: center;
+    overflow: hidden;
+}
+
+
+/*------------------------------------------------*/
+
+
+/* DEBUT  Section Background*/
+
+.background-video {
+    background-position: top center;
+    background-repeat: no-repeat;
+    bottom: 0;
+    left: 0;
+    overflow: hidden;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+video,
+source {
+    bottom: 0;
+    left: 0;
+    min-height: 100%;
+    min-width: 100%;
+    position: absolute;
+}
+
+.loaded .ytplayer-container {
+    display: block;
+}
+
+.loaded .placeholder-image {
+    opacity: 0;
+}
+
+.ytplayer-container {
+    bottom: 0;
+    height: 100%;
+    left: 0;
+    min-width: 100%;
+    overflow: hidden;
+    position: absolute;
+    right: 0;
+    top: 0;
+    z-index: 3;
+}
+
+.placeholder-image {
+    height: 100%;
+    left: 0;
+    min-height: 100%;
+    min-width: 100%;
+    position: fixed;
+    top: 0;
+    z-index: 1;
+}
+
+.ytplayer-shield {
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: 2;
+}
+
+.ytplayer-player {
+    position: absolute;
+}
+
+
+/*BACKGROUND NOIR AVEC OPACITY */
+
+#opacity-home {
+    background-repeat: repeat;
+    background-color: rgba(0, 0, 0, 0.5);
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    z-index: 4;
+    top: 0;
+}
+
+.opacity {
+    background-color: rgba(0, 0, 0, 0.5);
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    z-index: 1;
+    top: 0;
+}
+
+
+/*FIN BACKGROUND NOIR AVEC OPACITY */
+
+#commande-groupe {
+    background: url(../img/section1.jpg) no-repeat right top;
+    background-size: cover;
+}
+
+#comment-ca-marche-le-grood {
+    background: url(../img/section2.jpg) no-repeat left top;
+    background-size: cover;
+}
+}
+
+#restaurants-partenaires {
+    background: #FFF;
+}
+
+#telecharger-grood {
+    background: url(../img/pattern.jpg) repeat left top !important;
+}
+
+
+/*FIN BACKGROUND IMAGE */
+
+
+/*------------------------------------------------*/
+
+
+/*SECTION HOME*/
+
+#presentaion-grood #layer {
+    position: relative;
+    z-index: 4;
+}
+
+#presentaion-grood p {
+    color: #fff;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    padding: 1%;
+    font-size: 13px;
+}
+
+.telecharger-apps img {
+    width: 200px;
+    padding: 0 5px;
+}
+
+.telecharger-apps img:hover {
+    opacity: 0.7;
+    -webkit-opacity: 0.7;
+    -moz-opacity: 0.7;
+    filter: alpha(opacity=70);
+    transition: all 200ms ease-in;
+}
+
+#logo-pajesjaunes {
+    width: 150px;
+    margin: 0 auto;
+}
+
+#logo-grood {
+    padding: 10px;
+}
+
+#logo-pajesjaunes img {
+    width: 100% !important;
+}
+
+.telecharger-apps {
+    margin-top: 100px;
+}
+
+@-webkit-keyframes ani-mouse {
+    0% {
+        opacity: 1;
+        top: 29%;
+    }
+    15% {
+        opacity: 1;
+        top: 50%;
+    }
+    50% {
+        opacity: 0;
+        top: 50%;
+    }
+    100% {
+        opacity: 0;
+        top: 29%;
+    }
+}
+
+@-moz-keyframes ani-mouse {
+    0% {
+        opacity: 1;
+        top: 29%;
+    }
+    15% {
+        opacity: 1;
+        top: 50%;
+    }
+    50% {
+        opacity: 0;
+        top: 50%;
+    }
+    100% {
+        opacity: 0;
+        top: 29%;
+    }
+}
+
+@keyframes ani-mouse {
+    0% {
+        opacity: 1;
+        top: 29%;
+    }
+    15% {
+        opacity: 1;
+        top: 50%;
+    }
+    50% {
+        opacity: 0;
+        top: 50%;
+    }
+    100% {
+        opacity: 0;
+        top: 29%;
+    }
+}
+
+.scroll-btn {
+    display: block;
+    position: absolute;
+    left: 0;
+    right: 0;
+    text-align: center;
+    bottom: 0;
+    z-index: 9;
+}
+
+.scroll-btn > * {
+    display: inline-block;
+    line-height: 18px;
+    font-size: 13px;
+    font-weight: normal;
+    cursor: pointer;
+    color: #ffffff;
+    font-family: "proxima-nova", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    letter-spacing: 2px;
+}
+
+.scroll-btn > *:hover,
+.scroll-btn > *:focus,
+.scroll-btn > *.active {
+    color: #ffffff;
+}
+
+.scroll-btn > *:hover,
+.scroll-btn > *:focus,
+.scroll-btn > *:active,
+.scroll-btn > *.active {
+    opacity: 0.8;
+    filter: alpha(opacity=80);
+}
+
+.scroll-btn .mouse {
+    position: relative;
+    display: block;
+    width: 35px;
+    height: 55px;
+    margin: 0 auto 20px;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    border: 3px solid white;
+    border-radius: 23px;
+}
+
+.scroll-btn .mouse > * {
+    position: absolute;
+    display: block;
+    top: 29%;
+    left: 50%;
+    width: 8px;
+    height: 8px;
+    margin: -4px 0 0 -4px;
+    background: white;
+    border-radius: 50%;
+    -webkit-animation: ani-mouse 2.5s linear infinite;
+    -moz-animation: ani-mouse 2.5s linear infinite;
+    animation: ani-mouse 2.5s linear infinite;
+}
+
+
+/*------------------------------------------------*/
+
+
+/*DEBUT SECTION AVANTAGES*/
+
+#commande-groupe h2 {
+    margin-top: 15%;
+    float: left;
+    text-align: left;
+    width: 63.9%;
+}
+
+.block-avantages {
+    position: relative;
+    left: 0;
+    top: 45px;
+    width: 638px;
+    float: left;
+}
+
+.block-avantages ul li {
+    font-size: 1.3em;
+    color: #777;
+    display: list-item;
+    list-style-image: url(../img/icon-couiller.png);
+    padding: 30px;
+    text-align: left;
+    margin-left: 80px;
+}
+
+.iphone_right {
+    background: url(../img/le-grood-cest.png) no-repeat;
+    width: 25%;
+    max-width: 25%;
+    height: 590px;
+    background-size: 100%;
+    position: relative;
+    float: right;
+    bottom: 120px;
+}
+
+.iphone-fixe {
+   position: absolute;
+    left: 17.1px;
+    top: 103.1px;
+}
+
+
+/*FIN SECTION AVANTAGES*/
+
+
+/*DEBUT SECTION COMMENT CA MARCHE*/
+
+#comment-ca-marche-le-grood h2 {
+    text-align: center;
+}
+
+#comment-ca-marche-le-grood h3 {
+    color: #777;
+    text-align: center;
+}
+
+#comment-ca-marche-le-grood p {
+    padding: 10px;
+    text-align: center;
+}
+
+#comment-ca-marche-le-grood img {
+    width: 222px;
+}
+
+#slideshow {
+    background: url(../img/smartphone.png) no-repeat;
+    background-size: 290px;
+    position: relative;
+    width: 290px;
+    height: 593px;
+    top: 41px;
+    float: left;
+}
+
+#slideshow-container {
+    position: relative;
+    margin: auto;
+}
+
+.iphone_left {
+    background: url(../img/smartphone.png) no-repeat;
+    width: 256px;
+    height: 592px;
+    background-size: 100%;
+    position: relative;
+    float: left;
+    margin-top: 44px;
+}
+
+#div-slide {
+    padding: 60px 0px 0px;
+}
+
+.div-slide,
+#div-tuto,
+#icons-tuto {
+    float: right;
+    width: 725px;
+    margin-top: 80px;
+}
+
+#choisissez,
+#prive-public,
+#invitez-vos-amis,
+#la-livraison {
+    width: 93px;
+    height: 93px;
+    display: inline-block;
+    background-repeat: no-repeat;
+}
+
+.choisissez,
+.prive-public,
+.invitez-vos-amis,
+.la-livraison {
+    background-repeat: no-repeat;
+}
+
+.choisissez {
+    background-image: url(../img/icons/choisissez.png);
+}
+
+.choisissez.active {
+    background-image: url(../img/icons/choisissez-active.png);
+}
+
+.prive-public {
+    background-image: url(../img/icons/prive-public.png);
+}
+
+.prive-public.active {
+    background-image: url(../img/icons/prive-public-active.png);
+}
+
+.invitez-vos-amis {
+    background-image: url(../img/icons/invitez-vos-amis.png);
+}
+
+.invitez-vos-amis.active {
+    background-image: url(../img/icons/invitez-vos-amis-active.png);
+}
+
+.la-livraison {
+    background-image: url(../img/icons/la-livraison.png);
+}
+
+.la-livraison.active {
+    background-image: url(../img/icons/la-livraison-active.png);
+}
+
+.fade {
+    -webkit-animation-name: fade 2s;
+    -webkit-animation-duration: 3s;
+    animation-name: fade;
+    animation-duration: 2s;
+}
+
+@-webkit-keyframes fade {
+    from {
+        opacity: 0.1
+    }
+    to {
+        opacity: 0.4
+    }
+}
+
+@keyframes fade {
+    from {
+        opacity: .4
+    }
+    to {
+        opacity: 1
+    }
+}
+
+
+/*FIN SECTION COMMENT CA MARCHE*/
+
+
+/*SECTION REJOIGNEZ NOUS*/
+
+#restaurants-partenaires p {
+    padding: 10px 0px 65px;
+}
+
+#restaurants-partenaires h2 {
+    width: 65%;
+    margin: 0 auto;
+}
+
+.bandeau {
+    position: relative;
+    top: 15px;
+}
+
+button {
+    border: 0;
+    border-radius: 40px;
+    background: #2ecc71;
+    color: #fff;
+    padding: 20px 60px;
+    font-size: 1.5em;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+.padding {
+    padding: 15px 0px 175px 0px;
+}
+
+
+/* MODAL FORM */
+
+.modal {
+    display: none;
+    position: absolute;
+    z-index: 10;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    background-color: rgba(0, 0, 0, 0.1);
+    transition: background-color .3s;
+}
+
+#confirm-modal {
+    display: none;
+    position: absolute;
+    z-index: 10;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    background-color: rgba(0, 0, 0, 0.1);
+    transition: background-color .3s;
+}
+
+
+/* Modal Content/Box */
+
+.modal-content {
+    background-color: #fefefe;
+    margin: 5% auto;
+    padding: 20px;
+    width: 480px;
+    transition: background-color .3s;
+}
+
+
+/*Partenariat logos*/
+
+#restaurants-partenaires a:hover {}
+
+
+/* The Close Button */
+
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+
+/* FIN MODAL FORM */
+
+.logos_restaurants {
+    position: relative;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    display: block;
+    margin-top: 40px;
+}
+
+.logos li {
+    width: 16.6%;
+    float: left;
+    text-align: center;
+    position: relative;
+}
+
+.logos {
+    overflow: hidden;
+    opacity: 0.7;
+    -webkit-opacity: 0.7;
+    -moz-opacity: 0.7;
+    filter: alpha(opacity=70);
+}
+
+
+/* FOOTER GROOD*/
+
+#restaurants-partenaires p {
+    z-index: 2;
+}
+
+.dot {
+    cursor: pointer;
+    height: 93px;
+    width: 93px;
+    margin: 0 35px;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+
+#telecharger-grood p {
+    color: #777;
+    font-family: Brandon-Medium;
+    line-height: 25px;
+}
+
+
+/*FOOTER SECTION 3*/
+
+#logo-grood-app {}
+
+#column-middle {
+    bottom: 0;
+    position: absolute;
+    width: 100%;
+}
+
+.icons-social {
+    width: 55px;
+    height: 35px;
+}
+
+.footer {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    margin: 0 auto;
+    width: 290px;
+    right: 0;
+}
+
+.footer a {
+    text-decoration: none;
+    color: #777;
+}
+
+#logo-grood-app img {
+    width: 150px;
+}
+
+#useless-class {}
+
+
+/* Style (min-width:980px)and (max-width: 1170px) DESKTOP*/
+
+@media (min-width:990px)and (max-width: 1170px) {
+    .row {
+        width: 90%;
+        max-width: 1170px;
+        margin: 0 auto;
+    }
+    .logos li {
+        width: 16.6%;
+    }
+    /*SECTION 2*/
+    #div-tuto {
+        width: 635px;
+    }
+    #icons-tuto {
+        width: 635px;
+    }
+    .dot {
+        margin: 0 25px;
+    }
+    .div-slide {
+        width: 635px;
+    }
+}
+
+
+/* Style (min-width:769px)and (max-width: 979px) LANDSCAPE */
+
+@media (min-width:780px) and (max-width: 990px) {
+    body {
+        font-family: 'Brandon-Light', sans-serif !important;
+        font-size: 14px;
+        line-height: 1.5em;
+        color: #777;
+    }
+    h1 {
+        font-size: 4em;
+        line-height: 1em;
+        font-family: 'Brandon-Bold', sans-serif;
+        text-transform: uppercase;
+        color: #FFFFFF;
+    }
+    h2 {
+        font-size: 3em;
+        line-height: 1em;
+        font-family: 'Brandon-Bold', sans-serif;
+        text-transform: uppercase;
+        color: #2ecc71;
+    }
+    h3 {
+        font-size: 2.5em;
+        line-height: 1em;
+        font-family: 'Brandon-Bold', sans-serif;
+        text-transform: uppercase;
+        color: #2ecc71;
+    }
+    h4 {
+        font-size: 2em;
+        line-height: 1em;
+        font-family: 'Brandon-Bold', sans-serif;
+        text-transform: uppercase;
+        color: #777;
+    }
+    p {
+        font-size: 1.3em;
+    }
+    .section {
+        text-align: center;
+    }
+    /* FIN Style base */
+    .row {
+        width: 90%;
+        max-width: 980px;
+    }
+    /*BACKGROUNDS*/
+    #commande-groupe {
+        background: url(../img/section1-landscape.jpg) no-repeat right bottom;
+            background-position: 0% 120%;
+    }
+    #comment-ca-marche-le-grood {
+        background: url(../img/section2-landscape.jpg) no-repeat right bottom;
+        background-position:  0% 180%;
+
+    }
+    .header-nav a {
+        padding: 12px 6px;
+        font-size: 11px;
+    }
+    /*SECTION 1*/
+    #commande-groupe h2 {
+        text-align: left;
+        width: 70%;
+    }
+    .iphone_right {
+        width: 25%;
+    }
+    .block-avantages {
+        width: 70%;
+    }
+    .block-avantages ul li {
+        color: inherit;
+    }
+    /*SECTION 2*/
+    #icons-tuto {
+        width: 63%;
+    }
+    #comment-ca-marche-le-grood h2 {
+        text-align: center;
+    }
+    #comment-ca-marche-le-grood img {
+        width: 225px;
+    }
+    #choisissez,
+    #prive-public,
+    #invitez-vos-amis,
+    #la-livraison {
+        width: 70px;
+        height: 70px;
+        display: inline-block;
+        background-repeat: no-repeat;
+    }
+    .block-avantages ul li {
+
+    padding: 15px;
+
+}
+    .choisissez,
+    .prive-public,
+    .invitez-vos-amis,
+    .la-livraison {
+        background-size: 70px;
+    }
+    .choisissez {
+        background-image: url(../img/icons/choisissez.png);
+    }
+    .choisissez.active {
+        background-image: url(../img/icons/choisissez-active.png);
+    }
+    .prive-public {
+        background-image: url(../img/icons/prive-public.png);
+    }
+    .prive-public.active {
+        background-image: url(../img/icons/prive-public-active.png);
+    }
+    .invitez-vos-amis {
+        background-image: url(../img/icons/invitez-vos-amis.png);
+    }
+    .invitez-vos-amis.active {
+        background-image: url(../img/icons/invitez-vos-amis-active.png);
+    }
+    .la-livraison {
+        background-image: url(../img/icons/la-livraison.png);
+    }
+    .la-livraison.active {
+        background-image: url(../img/icons/la-livraison-active.png);
+    }
+    .iphone-fixe {
+        top: 107.1px;
+    }
+    #div-tuto {
+        width: 63%;
+        margin-top: 80px;
+    }
+    .dot {
+        margin: 0;
+    }
+    .div-slide {
+        width: 63%;
+        margin-top: 25px;
+    }
+    .iphone_left {
+        top: 40px;
+        width: 260px;
+    }
+    .iphone-fixe {
+        top: 143.1px;
+        left: 18px;
+    }
+    /*SECTION 3 REJOIGNEZ-NOUS*/
+    .modal-content {
+        margin: 5% auto;
+    }
+    .logos_restaurants {
+        padding: 0px;
+    }
+    .logos li {
+        width: 33.33%;
+    }
+    #restaurants-partenaires h2 {
+    width: 95%;
+    margin: 5% auto;
+}
+}
+
+
+/* Style (min-width:481px)and (max-width: 768px) TABLET*/
+
+@media (min-width:481px) and (max-width: 780px) {
+    body {
+        font-family: 'Brandon-Light', sans-serif !important;
+        font-size: 14px;
+        line-height: 1.5em;
+        color: #777;
+    }
+    h1 {
+        font-size: 4em;
+        line-height: 1em;
+        font-family: 'Brandon-Bold', sans-serif;
+        text-transform: uppercase;
+        color: #FFFFFF;
+    }
+    h2 {
+        font-size: 2.5em;
+        line-height: 1em;
+        font-family: 'Brandon-Bold', sans-serif;
+        text-transform: uppercase;
+        color: #2ecc71;
+    }
+    h3 {
+        font-size: 2.5em;
+        line-height: 1em;
+        font-family: 'Brandon-Bold', sans-serif;
+        text-transform: uppercase;
+        color: #2ecc71;
+    }
+    h4 {
+        font-size: 2em;
+        line-height: 1em;
+        font-family: 'Brandon-Bold', sans-serif;
+        text-transform: uppercase;
+        color: #777;
+    }
+    p {
+        font-size: 1.5em;
+        line-height: 1.2em;
+    }
+    .section {
+        text-align: center;
+    }
+    .scroll-btn {
+        display: none;
+    }
+    /* FIN Style base */
+    /*NAV BAR*/
+    .header {
+        display: none;
+    }
+    .header-hover {
+        display: none;
+    }
+    /*SPACE*/
+    #background-video {
+        display: none;
+    }
+    #background-image {
+        background-image: url(../img/section3.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 100%;
+        width: 100%;
+        position: absolute;
+        z-index: 3;
+        top: 0;
+    }
+    .row {
+        width: 90%;
+        max-width: 768px;
+    }
+    /*SECTION HOME TABLET*/
+    #logo-pajesjaunes img {
+        width: 40% !important;
+    }
+    #presentaion-grood {
+        background-image: url(../img/restaurants-partenaires.jpg);
+        background-size: cover;
+    }
+    #presentaion-grood #layer {
+        top: 5%;
+    }
+    #logo-pajesjaunes {
+        width: 400px;
+    }
+    .telecharger-apps img {
+        width: 200px;
+        padding: 0px 8px 21px;
+    }
+    .scroll-btn .mouse {
+        display: none;
+    }
+    #fp-nav {
+        display: none;
+    }
+    video#video-grood {
+        display: none;
+    }
+    img#mouse {
+        display: none;
+    }
+    /*FIN SECTION HOME */
+    /*SECTION 1 Slideshow*/
+    #commande-groupe {
+        background: #fff;
+    }
+    #commande-groupe h2 {
+        text-align: center;
+        position: relative;
+        width: 100%;
+    }
+    .iphone_right {
+        display: none;
+    }
+    .block-avantages {
+        position: relative;
+        width: 100%;
+        top: 25px;
+    }
+    .block-avantages ul li {
+        text-align: center;
+        list-style-image: none;
+        left: 0;
+        margin: 0 auto;
+        font-size: 2em;
+        line-height: 1.2;
+    }
+    /*SECTION 2 TABLET*/
+    #comment-ca-marche-le-grood {
+        background: #fff;
+    }
+    #comment-ca-marche-le-grood h2 {
+        position: relative;
+    }
+    #comment-ca-marche-le-grood h3 {
+        position: relative;
+        top: -100px;
+    }
+    .iphone_left {
+        background: url(../img/smartphone.png) no-repeat;
+        background-size: 220px;
+        position: absolute;
+        left: 0;
+        right: 0;
+        width: 220px;
+        top: 152px;
+        margin: 0 auto !important;
+    }
+    p#p-h2-tuto {
+        position: relative;
+    }
+    p#p-bulle-mobile {
+        position: relative;
+        top: 40px;
+        padding: 10px 0;
+        font-size: 18px !important;
+        height: 92px;
+    }
+    .div-slide,
+    #div-tuto,
+    #icons-tuto {
+        float: none;
+        width: 100%;
+    }
+    div#icons-tuto {
+        position: relative;
+        top: 490px;
+    }
+    #slideshow-container {
+        position: relative;
+    }
+    #comment-ca-marche-le-grood img {
+        width: 190px;
+    }
+    .iphone-fixe {
+        position: relative;
+        margin-right: 39px;
+        top: -82px;
+        overflow: hidden;
+    }
+    div#div-tuto {
+        width: 100%;
+    }
+    .dot {
+        margin: 0 6px;
+    }
+    #choisissez,
+    #prive-public,
+    #invitez-vos-amis,
+    #la-livraison {
+        width: 55px;
+        height: 55px;
+    }
+    .choisissez,
+    .prive-public,
+    .invitez-vos-amis,
+    .la-livraison {
+        background-size: 70px;
+    }
+    .choisissez {
+        background-image: url(../img/icons/choisissez.png);
+    }
+    .choisissez.active {
+        background-image: url(../img/icons/choisissez-active.png);
+    }
+    .prive-public {
+        background-image: url(../img/icons/prive-public.png);
+    }
+    .prive-public.active {
+        background-image: url(../img/icons/prive-public-active.png);
+    }
+    .invitez-vos-amis {
+        background-image: url(../img/icons/invitez-vos-amis.png);
+    }
+    .invitez-vos-amis.active {
+        background-image: url(../img/icons/invitez-vos-amis-active.png);
+    }
+    .la-livraison {
+        background-image: url(../img/icons/la-livraison.png);
+    }
+    .la-livraison.active {
+        background-image: url(../img/icons/la-livraison-active.png);
+    }
+    /*restaurants-partenaires REJOIGNEZ*/
+    .bandeau {
+        position: relative;
+        top: 55px;
+    }
+    button {
+        border-radius: 60px;
+        padding: 28px;
+        /* font-size: 2.2em; */
+    }
+    #restaurants-partenaires h2 {
+        width: 100%;
+        margin: 0 auto;
+    }
+    .logos_restaurants {
+        margin-top: 113px;
+    }
+    .modal-content {
+        margin: 0% auto;
+        width: 100%;
+        height: 100%;
+    }
+    .modal {
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.1);
+    }
+    form {
+        max-width: 90%;
+    }
+    .close {
+        font-size: 80px;
+        padding: 10px;
+    }
+    .logos li {
+        width: 33%;
+    }
+    /*restaurants-partenaires FOOTER*/
+    .footer {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;
+    }
+    #useless-class {}
+    input[type="text"],
+    input[type="password"],
+    input[type="date"],
+    input[type="datetime"],
+    input[type="email"],
+    textarea,
+    select {
+        font-size: 1.2em !important;
+        padding: 17px !important;
+        margin-bottom: 28px !important;
+    }
+    input[type="submit"] {
+        font-size: 2em !important;
+    }
+}
+
+
+/* Style (min-width: 320px) and (max-width:480px) MOBILE*/
+
+@media (min-height: 0px) and (max-width:480px) {
+    body {
+        font-family: 'Brandon-Light', sans-serif !important;
+        font-size: 14px;
+        line-height: 1.5em;
+        color: #777;
+    }
+    h1 {
+        font-size: 1.6em;
+        line-height: 1em;
+        font-family: 'Brandon-Bold', sans-serif;
+        text-transform: uppercase;
+        padding: 5px;
+    }
+    h2 {
+        font-size: 1.6em;
+        line-height: 1em;
+        font-family: 'Brandon-Bold', sans-serif;
+        text-transform: uppercase;
+    }
+    h3 {
+        font-size: 1.5em;
+        line-height: 1em;
+        font-family: 'Brandon-Bold', sans-serif;
+        text-transform: uppercase;
+    }
+    h4 {
+        font-size: 1.2em;
+        line-height: 1em;
+        font-family: 'Brandon-Bold', sans-serif;
+        text-transform: uppercase;
+        color: #777;
+    }
+    p {
+        font-size: 1.2em;
+        line-height: 1.2em;
+    }
+    .section {
+        text-align: center;
+    }
+    /* FIN Style base */
+    /*NAV BAR*/
+    .header {
+        display: none;
+    }
+    .header-hover {
+        display: none;
+    }
+    /*SPACE*/
+    .row {
+        width: 90%;
+        max-width: 480px;
+    }
+    .scroll-btn {
+        display: none;
+    }
+    #background-video {
+        display: none;
+    }
+    #background-image {
+        background-image: url(../img/section3.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 100%;
+        width: 100%;
+        position: absolute;
+        z-index: 3;
+        top: 0;
+    }
+    /*SECTION HOME TABLET*/
+    #logo-pajesjaunes img {
+        width: 30% !important;
+    }
+    #logo-grood img {
+        width: 50%;
+    }
+    #presentaion-grood {
+        background-image: url(../img/restaurants-partenaires.jpg);
+        background-size: cover;
+    }
+    #logo-pajesjaunes {
+        width: 100%;
+    }
+    #logo-grood {
+        margin-top: 3 0px;
+    }
+    #logo-grood-app {
+        bottom: 70px;
+        position: relative;
+    }
+    .telecharger-apps {
+        width: 100%;
+        margin-top: 100px;
+    }
+    .telecharger-apps img {
+        width: 50%;
+        padding: 0px 8px 10px;
+    }
+    #logo-grood {
+        width: 100%;
+    }
+    .scroll-btn .mouse {
+        display: none;
+    }
+    #fp-nav {
+        display: none;
+    }
+    video#video-grood {
+        display: none;
+    }
+    img#mouse {
+        display: none;
+    }
+    .telecharger-apps img {
+        padding: 20px 5pxt;
+    }
+    /*FIN SECTION HOME */
+    /*SECTION 1 Slideshow*/
+    #commande-groupe {
+        background: #fff;
+    }
+    #commande-groupe h2 {
+        text-align: center;
+        position: relative;
+        width: 100%;
+    }
+    .iphone_right {
+        display: none;
+    }
+    .block-avantages {
+        position: relative;
+        width: 100%;
+        top: 25px;
+    }
+    .block-avantages ul li {
+        text-align: center;
+        list-style-image: none;
+        left: 0;
+        margin: 0 auto;
+        padding: 0px 0px 40px 0px;
+    }
+    /*SECTION 2 MOBILE*/
+    #comment-ca-marche-le-grood {
+        background: #fff;
+    }
+    #comment-ca-marche-le-grood h3 {
+        position: relative;
+        top: -60px;
+    }
+    .iphone_left {
+        background: url(../img/smartphone.png) no-repeat;
+        background-size: 100px;
+        position: absolute;
+        left: 0;
+        right: 0;
+        height: 240px;
+        width: 100px;
+        top: 105.4px;
+        margin: 0 auto !important;
+    }
+    p#p-h2-tuto {
+        position: relative;
+        height: 80px;
+    }
+    p#p-bulle-mobile {
+        position: relative;
+        height: 80px;
+    }
+    .div-slide,
+    #div-tuto,
+    #icons-tuto {
+        float: none;
+        width: 100%;
+        margin-top: 23px;
+    }
+    div#icons-tuto {
+        position: relative;
+        top: 230px;
+    }
+    #slideshow-container {
+        position: relative;
+    }
+    #comment-ca-marche-le-grood img {
+        width: 86px;
+    }
+    .iphone-fixe {
+          position: relative;
+    margin-right: 34.1px;
+    top: -99.5px;
+    overflow: hidden;
+    }
+    div#div-tuto {
+        margin-top: 50px;
+        position: relative;
+    }
+    .dot {
+        margin: 13px;
+        height: 40px;
+        width: 40px;
+    }
+    #choisissez,
+    #prive-public,
+    #invitez-vos-amis,
+    #la-livraison {
+        width: 55px;
+        height: 55px;
+    }
+    .choisissez,
+    .prive-public,
+    .invitez-vos-amis,
+    .la-livraison {
+        background-size: 40px;
+    }
+    .choisissez {
+        background-image: url(../img/icons/choisissez.png);
+    }
+    .choisissez.active {
+        background-image: url(../img/icons/choisissez-active.png);
+    }
+    .prive-public {
+        background-image: url(../img/icons/prive-public.png);
+    }
+    .prive-public.active {
+        background-image: url(../img/icons/prive-public-active.png);
+    }
+    .invitez-vos-amis {
+        background-image: url(../img/icons/invitez-vos-amis.png);
+    }
+    .invitez-vos-amis.active {
+        background-image: url(../img/icons/invitez-vos-amis-active.png);
+    }
+    .la-livraison {
+        background-image: url(../img/icons/la-livraison.png);
+    }
+    .la-livraison.active {
+        background-image: url(../img/icons/la-livraison-active.png);
+    }
+    #restaurants-partenaires h2 {
+    margin: 5% auto;
+}
+    /*restaurants-partenaires REJOIGNEZ*/
+    .bandeau {
+        position: relative;
+        margin-top: 60px;
+    }
+    .logos_restaurants {
+        margin-top: 60px;
+    }
+    #comment-ca-marche-le-grood p {
+        height: 110px;
+    }
+    button {
+        border-radius: 35px;
+        padding: 17px;
+        font-size: 0.9em;
+    }
+    .modal-content {
+        margin: 0% auto;
+        width: 100%;
+        height: 100%;
+    }
+    .modal {
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.1);
+    }
+    .padding {
+        padding: 0px 0px 50px 0px;
+    }
+    form {
+        max-width: 90%;
+    }
+    .footer {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;
+    }
+    .close {
+        font-size: 30px;
+        padding: 5px;
+    }
+    .logos li {
+        width: 33%;
+    }
+    #restaurants-partenaires h2 {
+        width: 100%;
+        margin: 0 auto;
+    }
+    div#mobile-apps {
+        width: 100%;
+        height: 190px;
+        margin-top: 0px;
+    }
+    .logos_restaurants img {
+        width: 80px;
+    }
+    /*restaurants-partenaires FOOTER*/
+    #logo-grood-app img {
+        width: 40%;
+    }
+    .icons-social {
+        width: 15%;
+        padding: 0px;
+    }
+    #useless-class {}
+    input[type="text"],
+    input[type="password"],
+    input[type="date"],
+    input[type="datetime"],
+    input[type="email"],
+    textarea,
+    select {
+        font-size: 2.2em !important;
+        ;
+        padding: 20px !important;
+        ;
+        margin-bottom: 38px !important;
+    }
+    input[type="submit"] {
+        font-size: 2.2em !important;
+    }
+}
+
+@media (min-height: 0px) and (max-height: 650px) {
+    .scroll-btn {
+        display: none;
+    }
+.telecharger-apps {
+    margin-top: 40px;
+}
+}
+
+@media only screen and (min-device-width: 320px) and (max-device-width: 568px) and (orientation: landscape) {
+    h1 {
+        font-size: 2em;
+    }
+    .footer {
+        position: relative;
+    }
+}
